@@ -1,12 +1,16 @@
 import React from 'react';
-import ChatRoom from './views/ChatRoom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-const App = () => {
+import ChatListView from './views/ChatList';
+// import ChatRoom from './views/ChatRoom';
+
+function App() {
   return (
-    <>
-      <ChatRoom title="Manan" />
-    </>
+    <Router>
+      <Route path='/' component={ChatListView} exact />
+      {/* <Route path='/:id' component={ChatRoom} exact /> */}
+    </Router>
   );
-};
+}
 
 export default App;
