@@ -10,6 +10,7 @@ const ItemContainer = styled.div`
 
   :hover {
     background-color: #f2f6f9;
+    cursor: pointer;
   }
 `;
 

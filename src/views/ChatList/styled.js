@@ -5,6 +5,7 @@ const ViewContainer = styled.div`
   width: 100vw;
 
   background-color: #ffffff;
+  overflow: hidden;
 `;
 
 const HeaderContainer = styled.section`
@@ -40,6 +41,8 @@ const ChatListContainer = styled.div`
   height: calc(90%);
   width: calc(100% - 32px);
   padding: 0 16px;
+
+  overflow-y: scroll;
 `;
 
 const ActionsContainer = styled.section`

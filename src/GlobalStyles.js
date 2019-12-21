@@ -1,10 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+html, body {
+  overflow-x: hidden;
+}
+
 body {
+  position: relative;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
