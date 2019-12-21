@@ -6,6 +6,7 @@ import {
   ActionsContainer,
   ViewTitle
 } from './styled';
+import ChatListItem from '../../components/ChatListItem';
 
 function ChatSelectionView() {
   return (
@@ -13,7 +14,18 @@ function ChatSelectionView() {
       <HeaderContainer>
         <ViewTitle>Messages</ViewTitle>
       </HeaderContainer>
-      <ChatListContainer />
+      <ChatListContainer>
+        {new Array(10).fill().map((_, i) => {
+          const idx = i;
+          return (
+            <ChatListItem
+              key={idx}
+              name='Manan Joshi'
+              text='You have a new message'
+            />
+          );
+        })}
+      </ChatListContainer>
       <ActionsContainer />
     </ViewContainer>
   );

@@ -4,7 +4,7 @@ const ViewContainer = styled.div`
   height: 100vh;
   width: 100vw;
 
-  background-color: #f2f6f9;
+  background-color: #ffffff;
 `;
 
 const HeaderContainer = styled.section`
@@ -13,6 +13,28 @@ const HeaderContainer = styled.section`
 
   padding: 16px;
 `;
+
+const ViewTitle = styled.span`
+  color: #242e4c;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+
+  line-height: 42px;
+  text-align: center;
+`;
+
+// const SearchIcon = styled.span`
+//   display: inline-block;
+//   height: 24px;
+//   width: 24px;
+//   float: right;
+
+//   background-color: red;
+//   background-image: url();
+//   text-align: center;
+// `;
 
 const ChatListContainer = styled.div`
   height: calc(90%);
@@ -27,21 +49,11 @@ const ActionsContainer = styled.section`
   background-color: blue;
 `;
 
-const ViewTitle = styled.span`
-  color: #242e4c;
-
-  font-size: 36px;
-  font-style: normal;
-  font-weight: bold;
-
-  line-height: 42px;
-  text-align: center;
-`;
-
 export {
   ViewContainer,
   HeaderContainer,
+  ViewTitle,
+  // SearchIcon,
   ChatListContainer,
-  ActionsContainer,
-  ViewTitle
+  ActionsContainer
 };
