@@ -1,12 +1,16 @@
 import React from 'react';
+
+import ChatListItem from '../../components/ChatListItem';
+import ActionIcons from '../../components/ActionIcons';
+
 import {
   ViewContainer,
   HeaderContainer,
   ChatListContainer,
   ActionsContainer,
-  ViewTitle
+  ViewTitle,
+  ActionsIconsGroup
 } from './styled';
-import ChatListItem from '../../components/ChatListItem';
 
 function ChatSelectionView() {
   return (
@@ -26,7 +30,11 @@ function ChatSelectionView() {
           );
         })}
       </ChatListContainer>
-      <ActionsContainer />
+      <ActionsContainer>
+        <ActionsIconsGroup>
+          <ActionIcons />
+        </ActionsIconsGroup>
+      </ActionsContainer>
     </ViewContainer>
   );
 }

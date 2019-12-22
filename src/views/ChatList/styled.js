@@ -9,7 +9,6 @@ const ViewContainer = styled.div`
 `;
 
 const HeaderContainer = styled.section`
-  height: calc(10% - 32px);
   width: calc(100% - 32px);
 
   padding: 16px;
@@ -38,7 +37,7 @@ const ViewTitle = styled.span`
 // `;
 
 const ChatListContainer = styled.div`
-  height: calc(90%);
+  height: 80%;
   width: calc(100% - 32px);
   padding: 0 16px;
 
@@ -46,10 +45,22 @@ const ChatListContainer = styled.div`
 `;
 
 const ActionsContainer = styled.section`
-  height: 10%;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 20px);
+  padding: 10px;
+
+  background-color: #f8fbfd;
+`;
+
+const ActionsIconsGroup = styled.div`
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
 `;
 
 export {
@@ -58,5 +69,6 @@ export {
   ViewTitle,
   // SearchIcon,
   ChatListContainer,
-  ActionsContainer
+  ActionsContainer,
+  ActionsIconsGroup
 };
